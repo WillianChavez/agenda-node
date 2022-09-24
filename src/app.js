@@ -23,9 +23,10 @@ app.engine(
 app.set('view engine', '.hbs')
 
 // middlewares
-app.use(morgan('combined'))
+app.use(morgan('dev'))
 app.use(express.urlencoded({ extended: false }))
 
 // rutas
+app.use('/', require('./routes/contacts.routes'))
 
 module.exports = app
