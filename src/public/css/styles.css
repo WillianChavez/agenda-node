@@ -1,0 +1,27 @@
+.img-list-item{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white;
+}
+
+.accordion-button:focus, .btn-icon:focus {
+    border: none;
+    box-shadow: none;
+    background-color: white;
+
+}
+
+.btn-icon{
+    background-color: white;
+    appearance: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0 1em;
+
+}

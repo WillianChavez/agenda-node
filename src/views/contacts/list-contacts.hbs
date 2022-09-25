@@ -1,0 +1,106 @@
+{{>modal}}
+
+<div class="container-md">
+    <div class="row justify-content-center">
+        <div class="col-7 position-relative">
+            <input type="text" class="form-control " placeholder="Buscar contacto">
+            <button type="button" class="btn-close mx-4 position-absolute top-50 end-0 translate-middle-y"
+                aria-label="Close"></button>
+        </div>
+        <button class="btn btn-primary px-3 col col-lg-1  mx-3" data-bs-toggle="modal" data-bs-target="#modalContacts"
+            data-bs-action="create">Nuevo</button>
+    </div>
+
+    <section class="mt-4">
+        <h2>Listado</h2>
+        <div class="accordion accordion-flush bg-light h-50 overflow-auto p-4" id="accordionFlushExample">
+            <div class="accordion-item" id="list-item-1">
+                <h2 class="accordion-header d-flex" id="flush-headingThree">
+                    <button class="accordion-button collapsed d-flex p-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+
+                        <img src="https://img.freepik.com/foto-gratis/mujer-positiva-sonriendo-modelo-divertido-que-presenta-cerca-pared-rosada-estudio_158538-3433.jpg?w=2000"
+                            alt="" class="rounded-circle img-list-item">
+                        <span class="ms-5 d-inline-block list-item-name">Nombre mas falso
+                            que todo</span>
+                    </button>
+                    <button class="btn-icon list-item-is-favorite">
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="list-item-description">
+                            <p>Telefono: <span class="list-item-phone">8585-55555</span> </p>
+                            <p>Email: <span class="list-item-email">williamChavez@gmail.com</span></p>
+                        </div>
+                        <div class="d-flex justify-content-end gap-2">
+                            <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalContacts"
+                                data-bs-action="edit" data-bs-item-list="list-item-1">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </button>
+
+                            <button class="btn btn-light" data-bs-item-list="list-item-1" data-bs-toggle="modal"
+                                data-bs-target="#modalDelete">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item" id="list-item-2">
+                <h2 class="accordion-header d-flex" id="flush-headingFour">
+                    <button class="accordion-button collapsed d-flex p-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+
+                        <img src="https://img.freepik.com/foto-gratis/mujer-positiva-sonriendo-modelo-divertido-que-presenta-cerca-pared-rosada-estudio_158538-3433.jpg?w=2000"
+                            alt="" class="rounded-circle img-list-item">
+                        <span class="ms-5 d-inline-block list-item-name">Nombre mas falso
+                            que todo 2</span>
+                    </button>
+                    <button class="btn-icon">
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="list-item-description">
+                            <p>Telefono: <span class="list-item-phone">9999-55555</span> </p>
+                            <p>Email: <span class="list-item-email">dfañdChavez@gmail.com</span></p>
+                        </div>
+                        <div class="d-flex justify-content-end gap-2">
+                            <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalContacts"
+                                data-bs-action="edit" data-bs-item-list="list-item-2">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </button>
+
+                            <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalDelete"
+                                data-bs-item-list="list-item-2">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
