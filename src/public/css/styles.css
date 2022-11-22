@@ -25,3 +25,11 @@
     padding: 0 1em;
 
 }
+
+.list-item-is-favorite span{
+    color: rgb(255, 174, 0);
+
+}
+.align-star{
+    transform: translateY(5px);
+}
